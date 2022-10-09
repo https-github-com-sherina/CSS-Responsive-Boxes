@@ -1,3 +1,32 @@
-body {
-  background: blanchedalmond;
+*{
+  border: 5px solid purple;
+
 }
+body {
+  background: rgba(49, 0, 128, 0.326);
+}
+.container{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 25px;
+  font-family: fantasy;
+}
+
+main{
+  min-height: 60vh;
+  flex-grow: 5;
+}
+
+footer, header {
+    flex-grow: 1;
+}
+
+  main {
+      max-width: 100%;
+  }
+  header, footer {
+      width: 100%;
+  }

@@ -1,3 +1,63 @@
-body {
-  background: papayawhip;
+:root{
+   --rose: rgb(250, 77, 77);
+   --brick:  hwb(18 23% 36%);
+   --dusty-emerald: #52796f;
+   --deep-emerald: #354f52;
+   --night-forest: #2f3e46;
+}
+
+body{
+  margin: 0px;;
+  font-family; sans-serif;
+  text-align-last: center;
+  background-color: var(--dusty-emerald);
+  color: var(--pale-sage);
+  border: 1px solid rgb(183, 131, 0);
+}   
+.container{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 50px;
+  font-family: fantasy;
+  border: 1px solid rgb(183, 131, 0);
+}
+
+main{
+  min-height: 10vh;
+  flex-grow: 2;
+  border: 1px solid rgb(183, 131, 0);
+}
+
+.section {
+  background-color: var(--night-forest);
+  flex-grow: 1;
+  justify-content: space-evenly;
+  border: 1px solid rgb(183, 131, 0);
+  }
+
+footer, header {
+  background-color: var(--brick);
+  flex-grow: 1;
+  border: 1px solid rgb(183, 131, 0);
+}
+
+@media (min-width: 600px){
+  .section {
+      display: inline-flex;
+      justify-content: space-evenly;
+      flex-direction: row; 
+      flex-wrap: wrap;
+  }
+  d {
+    border: 1px solid gold;
+  }
+  main {
+      max-width: 100%;
+  }
+  header, footer {
+      width: 100%;
+  }
 }
